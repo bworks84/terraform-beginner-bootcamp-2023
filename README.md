@@ -216,3 +216,6 @@ Provide the following code (replace with your token in the file):
     }
 }
 ```
+
+We have automated this workaround with the following bash script [bin/generate_tfrc_credentials](bin/generate_tfrc_credentials)
+*Follow along videos were presented out of order, so I have made branch 16, instead of 15 in Andrew's tutorial
