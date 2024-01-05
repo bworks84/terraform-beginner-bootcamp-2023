@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+grep -q 'alias tf="terraform"' ~/.bash_profile
+
+# 
+if [ $? -ne 0 ]; then
+    # If the alias does not exist, append it
+    echo 'alias tf="terraform"' >> ~/.bash_profile
+    echo "Alias added successfully."
+else
+    # If the user of the alias already exists
+    echo "Alias already exists in .bash_profile."
+fi
+
+# Reload the bashrc to apply the changes immediately
+source ~/.bashrc
+
+echo "Terraform alias 'tf' has been set."
