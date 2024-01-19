@@ -8,3 +8,8 @@
 ## Extras
 - [Github Markdown TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
 
+## Notes
+
+If you need to get variables again or see if they are loaded : 
+
+env | grep AWS_
