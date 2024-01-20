@@ -44,3 +44,28 @@ auto.tfvars
 TODO: document this functionality for terraform cloud
 order of terraform variables
 TODO: document which terraform variables takes presendence.
+
+### order of terraform variables
+
+- TODO: document which terraform variables takes precedence.
+
+## Dealing With Configuration Drift
+
+## What happens if we lose our state file?
+
+If you lose your statefile, you most likley have to tear down all your cloud infrastructure manually.
+
+You can use terraform import but it won't work for all cloud resources. You need check the terraform providers documentation for which resources support import.
+
+### Fix Missing Resources with Terraform Import
+
+`terraform import aws_s3_bucket.bucket bucket-name`
+
+[Terraform Import](https://developer.hashicorp.com/terraform/cli/import)
+[AWS S3 Bucket Import](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket#import)
+
+### Fix Manual Configuration
+
+If someone goes and delete or modifies cloud resource manually through ClickOps...
+
+Need to run Terraform plan to attempt to put our infrstraucture back into the expected state fixing Configuration Drift
