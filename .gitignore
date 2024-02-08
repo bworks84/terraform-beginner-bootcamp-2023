@@ -35,3 +35,5 @@ terraform.rc
 
 # variables
 .env.example
+
+terraform-provider-terratowns/terraform-provider-terratowns_v*
