@@ -80,7 +80,7 @@ class TerraTownsMockServer < Sinatra::Base
   end
 
   def x_user_uuid
-    return 'e328f4ab-b99f-421c-84c9-4ccea042c7d1'
+    return 'fe2db730-0904-4ef3-b0ae-e4f2307af750' # replaced from Andrew's to mine 2/11
   end
 
   def find_user_by_bearer_token
@@ -106,7 +106,9 @@ class TerraTownsMockServer < Sinatra::Base
 
     # the code and the user_uuid should be matching for user
     unless code == x_access_code && params['user_uuid'] == x_user_uuid
-      error 401, "a1003 Failed to authenicate, bearer token invalid and/or teacherseat_user_uuid invalid"
+      print "x_access_code: #{x_access_code}"
+      print "params['user_uuid']: #{params['user_uuid']}" ### Erroring here 
+      error 401, "a1003 Failed to authenticate, bearer token invalid and/or teacherseat_user_uuid is invalid" 
     end
   end
 
