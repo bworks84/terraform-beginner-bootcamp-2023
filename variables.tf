@@ -1,27 +1,29 @@
+variable "terratowns_endpoint" {
+ type = string
+}
+
+variable "terratowns_access_token" {
+ type = string
+}
+
 variable "user_uuid" {
-  type = string
+ type = string
 }
 
 variable "bucket_name" {
-  type = string
+ type = string
 }
 
 variable "index_html_filepath" {
-  description = "Path to the index HTML file"
-  type        = string
-
+  type = string
 }
 
 variable "error_html_filepath" {
-  description = "Path to the error HTML file"
-  type        = string
-
+  type = string
 }
 
 variable "content_version" {
-  description = "The version number of the content"
   type        = number
-
 }
 
 variable "assets_path" {

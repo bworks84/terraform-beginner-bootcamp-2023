@@ -1,4 +1,5 @@
 user_uuid="fe2db730-0904-4ef3-b0ae-e4f2307af750"
+terratowns_endpoint="https://terratowns.cloud/api"
 bucket_name="3mvz1imi9cbivhvs4ccdnu5v0vh28x5a"
 index_html_filepath="/workspace/terraform-beginner-bootcamp-2023/public/index.html"
 error_html_filepath="/workspace/terraform-beginner-bootcamp-2023/public/error.html"
