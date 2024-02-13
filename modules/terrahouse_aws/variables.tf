@@ -21,24 +21,10 @@ variable "user_uuid" {
 #   }
 # }
 
-variable "index_html_filepath" {
-  description = "Path to the index HTML file"
+variable "public_path" {
+  description = "Th file path for the public directory"
   type        = string
 
-  validation {
-    condition     = fileexists(var.index_html_filepath)
-    error_message = "The specified index HTML file path is invalid or does not exist."
-  }
-}
-
-variable "error_html_filepath" {
-  description = "Path to the error HTML file"
-  type        = string
-
-  validation {
-    condition     = fileexists(var.error_html_filepath)
-    error_message = "The specified error HTML file path is invalid or does not exist."
-  }
 }
 
 variable "content_version" {
@@ -46,12 +32,7 @@ variable "content_version" {
   type        = number
 
   validation {
-    condition     = var.content_version > 0 && floor(var.content_version) == ceil(var.content_version)
+    condition     = var.content_version > 0 && floor(var.content_version) == var.content_version
     error_message = "Content version must be a positive integer starting at 1."
   }
-}
-
-variable "assets_path" {
-  description = "Path to assets folder"
-  type = string
 }
