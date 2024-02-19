@@ -32,11 +32,11 @@ module "home_drager_hosting" {
 resource "terratowns_home" "home" {
   name = "Futuristic City of Drager"
   description = <<DESCRIPTION
-Check out this city of the future 
+Drager...a marvel of technology and art, a beacon of hope for some, a gilded cage for others. Will it maintain its perfect harmony, or will the shadows tear it apart? The future of this mythical city hangs in the balance, waiting for its story to unfold. 
 DESCRIPTION
   domain_name = module.home_drager_hosting.domain_name
   # domain_name "3a2f3f.cloudfront.net"
-  town = "missingo"
+  town = "video-valley"
   content_version = var.drager.content_version
 }
 
@@ -55,6 +55,6 @@ This dog bar is a great place to have a coffee or beer and let your doggos play 
 DESCRIPTION
   domain_name = module.home_dog_bar_hosting.domain_name
   # domain_name "3a2f3f.cloudfront.net"
-  town = "missingo"
+  town = "the-nomad-pad"
   content_version = var.dog_bar.content_version
 }

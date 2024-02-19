@@ -1,5 +1,7 @@
 # Terraform Beginner Bootcamp 2023 - Week 2
 
+![Week 2 Diagram](/workspace/terraform-beginner-bootcamp-2023/assets/week2_diagram.png)
+
 ## Working with Ruby
 
 ### Bundler
@@ -62,3 +64,11 @@ Terraform Provider resources utilize CRUD.
 CRUD stands for Create, Read Update, and Delete
 
 https://en.wikipedia.org/wiki/Create,_read,_update_and_delete
+
+
+## Updates and Final submission
+
+I have completed my two terrahomes after working on this project for a couple months. To complete I placed each terrahome in the appropriate terratown, fixed up the index.html and file paths to the photos
+and added some styling to the Drager city. 
+
+This was a great project and I learned a ton about terraform, git ops, and was exposed to some new code (Ruby, Go). 
